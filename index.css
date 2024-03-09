@@ -102,6 +102,7 @@ html {
     line-height: 24px;
     text-decoration: none;
     transition: all 0.3s;
+    border: 2px solid #2563EB;
 
 }
 
@@ -331,6 +332,13 @@ html {
     border: 2px solid var(--Default-gray-300, #D1D5DB);
     margin-left: auto;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.filter-btn:hover{
+    background-color: #e2e4e7;
+    box-shadow: 1px 1px 1px 1px #e2e4e7 , 
+    0px 2px 20px 0px #D1D5DB ;
 }
 
 .filter-btn-title {
@@ -341,7 +349,6 @@ html {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-
 }
 
 @media(max-width:1024px) {
@@ -407,7 +414,6 @@ html {
 
 .card-p {
     color: #0f172a;
-    max-width: 363px;
     font-family: sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -801,6 +807,8 @@ html {
 }
 
 .cards-line {
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -909,7 +917,6 @@ html {
     }
 
     .cards-2-title {
-        max-width: 2px;
         color: var(--Extended-cool-gray-900, #111827);
         font-family: Inter, sans-serif;
         font-size: 24px;
@@ -960,6 +967,7 @@ html {
     }
 
     .card-line {
+        width: 100%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -974,6 +982,11 @@ html {
     .product-imgg {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+@media(max-width:460px){
+    .cards-line{
+       width: 100%;
     }
 }
 
